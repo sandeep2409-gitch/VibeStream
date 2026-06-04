@@ -115,7 +115,7 @@ export default function SettingsTab({ spotifyUser, onLogout, clientId, onSaveCli
               </li>
               <li>
                 In the <strong>Redirect URIs</strong> field, add EXACTLY:{' '}
-                <code>{REDIRECT_URI}</code> (include the trailing slash!).
+                <code>{window.location.origin + '/'}</code> (include the trailing slash!).
               </li>
               <li>Accept the terms and click <strong>Save</strong>.</li>
               <li>
